@@ -1,4 +1,4 @@
-/*
+
 // Add interactive effects to cards
 document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('mouseenter', () => {
@@ -31,7 +31,7 @@ function typeWriter() {
 
 
 setTimeout(typeWriter, 1000);
-*/
+
  // Get the query string (e.g., ?from=third-main)
 const params = new URLSearchParams(window.location.search);
 const from = params.get('from');
@@ -42,10 +42,11 @@ if (from === 'tenth-main') {
   backUrl = '../html/RCS.html';
 }
 
-document.getElementById('runcode').addEventListener('click', function() {
+document.getElementById('btnone').addEventListener('click', function() {
   window.location.href = backUrl;
 
 });
+
 
 
 
