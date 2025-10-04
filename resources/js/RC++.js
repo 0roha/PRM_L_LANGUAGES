@@ -1,4 +1,5 @@
- // Add interactive effects to cards
+/*
+// Add interactive effects to cards
 document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('mouseenter', () => {
         card.style.boxShadow = `0 0 20px ${getRandomNeonColor()}`;
@@ -30,7 +31,7 @@ function typeWriter() {
 
 
 setTimeout(typeWriter, 1000);
-
+*/
  // Get the query string (e.g., ?from=third-main)
 const params = new URLSearchParams(window.location.search);
 const from = params.get('from');
@@ -45,3 +46,4 @@ document.getElementById('runcode').addEventListener('click', function() {
   window.location.href = backUrl;
 
 });
+
