@@ -29,11 +29,12 @@ const params = new URLSearchParams(window.location.search);
 const from = params.get('from');
 
 // Determine where to go back
-let backUrl = 'file:///E:/PRMLANG/HTML/RWD.html'; // default fallback
+let backUrl = '../html/RWD.html'; // default fallback
 if (from === 'sixth-main') {
-  backUrl = 'file:///E:/PRMLANG/HTML/RCS.html';
+  backUrl = '../html/RCS.html';
 }
 
 document.getElementById('runcode').addEventListener('click', function() {
   window.location.href = backUrl;
+
 });
